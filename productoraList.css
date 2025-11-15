@@ -154,106 +154,110 @@ body {
 }
 
 .card {
-  width: 15rem;
-  background: linear-gradient(135deg, #ffffff 0%, #f3f3ff 100%);
-  border: 2px solid #4130947a;
-  border-bottom-left-radius: 18px;
-  border-top-right-radius: 18px;
-  box-shadow: 0 20px 80px rgba(65, 48, 148, 0.3); /* Destello más profundo */
-  color: #2c2c2c;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  overflow: hidden;
-  position: relative;
+    width: 15rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f3f3ff 100%);
+    border: 2px solid #4130947a;
+    border-bottom-left-radius: 18px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 20px 80px rgba(65, 48, 148, 0.3);
+    /* Destello más profundo */
+    color: #2c2c2c;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
+    position: relative;
 }
 
 .card::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle at center, rgba(65, 48, 148, 0.1), transparent 70%);
-  transform: rotate(25deg);
-  z-index: 0;
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(65, 48, 148, 0.1), transparent 70%);
+    transform: rotate(25deg);
+    z-index: 0;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 30px 100px rgba(65, 48, 148, 0.4);
+    transform: translateY(-8px);
+    box-shadow: 0 30px 100px rgba(65, 48, 148, 0.4);
 }
 
 .card-img-top {
-  height: 200px;
-  object-fit: cover;
-  filter: brightness(0.95) contrast(1.05);
-  transition: transform 0.4s ease;
-  z-index: 1;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(0.95) contrast(1.05);
+    transition: transform 0.4s ease;
+    z-index: 1;
 }
 
 .card:hover .card-img-top {
-  transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 .card-body {
-  padding: 1rem;
-  background-color: #ffffff;
-  z-index: 1;
-  position: relative;
+    padding: 1rem;
+    background-color: #ffffff;
+    z-index: 1;
+    position: relative;
 }
 
 .card-title {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: #413094;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #413094;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
 }
 
 .card-text {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: #555;
+    max-height: 4.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .btn-primary {
-  background-color: #5f48d1;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(65, 48, 148, 0.4);
+    background-color: #5f48d1;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(65, 48, 148, 0.4);
 }
 
 .btn-primary:hover {
-  background-color: #413094;
-  transform: scale(1.05);
+    background-color: #413094;
+    transform: scale(1.05);
 }
 
 .card-subtitle {
-  font-size: 0.85rem;
-  color: #777;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
 }
 
 .titulo {
-  position: relative;
-  width: 100%;
-  text-align: left;
-  align-items: center;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    align-items: center;
 }
 
 .titulo h2 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #413094;
-  margin: 0;
-  white-space: nowrap;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #413094;
+    margin: 0;
+    white-space: nowrap;
 }
 
 .titulo h2 {
