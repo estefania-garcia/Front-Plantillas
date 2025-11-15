@@ -234,7 +234,8 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #413094;
+    background-color: #6d61a86b;
+    color: #413094;
     transform: scale(1.05);
 }
 
