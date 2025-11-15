@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "typescript",
+			"tsconfig": "Taller TypeScript 1/tsconfig.json",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build",
+			"label": "tsc: compilación: Taller TypeScript 1/tsconfig.json"
+		},
+		{
+			"type": "typescript",
+			"tsconfig": "Taller TypeScript 1/tsconfig.json",
+			"option": "watch",
+			"problemMatcher": [
+				"$tsc-watch"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "tsc: inspección: Taller TypeScript 1/tsconfig.json"
+		}
+	]
+}
